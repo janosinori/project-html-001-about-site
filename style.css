@@ -1,0 +1,111 @@
+/* Alapok */
+body {
+    background: #f0950d; }
+h1 {
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:200px ;
+    text-align: left;
+}
+
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+h2,h4,p,ol,ul {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:200px ;
+}
+
+section {
+    clear: both;
+}
+footer {
+    clear: both;
+}
+nav {
+    float:right
+}
+nav.top{
+    float:left
+}
+
+/* Főoldal oldal - index */
+img.portre1 {
+    float: left;
+    width: 50%;
+}
+img.portre2 {
+    float: right;
+    width: 50%
+}
+
+div.third {
+    float: left;
+    width: 33%;
+    color: rgb(10, 3, 102);
+    text-align: center;
+}
+
+/* Munkássága - works*/
+img.works {
+    float: left;
+    max-width: 200px;
+}
+@media screen and (max-width: 600px) {
+    div {
+      width: 100%
+    }
+  }
+/*Képgaléria - gallery */
+img.gallery{ 
+    display:inline-block; 
+    box-shadow: 3px 3px 7px black; 
+    width:350px; 
+    height:350px; 
+}
+@media screen and (max-width: 600px) {
+    div {
+      width: 33%
+    }
+  }
+
+/*Életrajza - about*/
+img.about{display:inline-block; box-shadow: 3px, 3px, 7px, black; max-width:400px; max-height:400px;}
+
+form {
+    width:80%;
+    border: 3px solid darkblue;
+    padding:50px;
+    margin: 20px;
+    text-align: left;
+}
+form.button {
+    display: inline-block;
+    width: 40%;
+    border: 1px solid;
+    padding: 0;
+    margin: 0 4% 0 4%;
+}
+input{
+    display: inline-block;
+    width: 40%;
+    border: 1px solid;
+    padding: 0;
+    margin: 0 4% 0 4%;
+}
+form.label{
+    display: inline-block;
+    width: 40%;
+    border: 1px solid;
+    text-align: center;
+    padding: 0;
+    margin: 0 4% 0 4%;
+}
+form.textarea{
+    display: inline-block;
+    width: 40%;
+    border: 1px solid;
+    padding: 0;
+    margin: 0 4% 0 4%;
+}
