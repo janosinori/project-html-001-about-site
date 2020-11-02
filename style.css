@@ -1,6 +1,24 @@
 /* Alapok */
 body {
-    background: #f0950d; }
+    background: #f0950d;
+    margin:0;
+    padding:0;
+}
+
+header{
+    background-color: #be7a12;
+    height: 4em;
+    line-height: 4em;
+    text-align: center;
+}
+
+nav.menu{
+    list-style-type: none;
+}
+nav.menu ul li {
+    display: inline-block
+}
+
 h1 {
     font-style: italic;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -17,9 +35,6 @@ h2,h4,p,ol,ul {
     font-weight:200px ;
 }
 
-section {
-    clear: both;
-}
 footer {
     clear: both;
 }
@@ -31,32 +46,38 @@ nav.top{
 }
 
 /* Főoldal oldal - index */
-img.portre1 {
-    float: left;
-    width: 50%;
-}
-img.portre2 {
-    float: right;
-    width: 50%
+
+img.index-portre{
+    display: inline-block;
+    width: 25%;
+    margin:5%;
 }
 
-div.third {
-    float: left;
-    width: 33%;
-    color: rgb(10, 3, 102);
+div.property-box {
+    display: inline-block;
+    width: 32%;
+    box-sizing: border-box;
+    background-color: #f0ba0b;
     text-align: center;
+    height: 5em;
+    line-height: 2 em;
+    color: rgb(10, 3, 102);
+    border-radius: 3px;
+    border: solid 1px rgb(10, 3, 102);
+    box-shadow: 0 0 3px black
 }
 
 /* Munkássága - works*/
 img.works {
-    float: left;
-    max-width: 200px;
+    width:25%;
+    margin-right:2%
 }
-@media screen and (max-width: 600px) {
-    div {
-      width: 100%
-    }
-  }
+div.works-text{
+    width:70%;
+    display:inline-block;
+    vertical-align: top;
+}
+
 /*Képgaléria - gallery */
 img.gallery{ 
     display:inline-block; 
@@ -64,11 +85,6 @@ img.gallery{
     width:350px; 
     height:350px; 
 }
-@media screen and (max-width: 600px) {
-    div {
-      width: 33%
-    }
-  }
 
 /*Életrajza - about*/
 img.about{display:inline-block; box-shadow: 3px, 3px, 7px, black; max-width:400px; max-height:400px;}
@@ -80,7 +96,7 @@ form {
     margin: 20px;
     text-align: left;
 }
-form.button {
+form button {
     display: inline-block;
     width: 40%;
     border: 1px solid;
@@ -94,7 +110,7 @@ input{
     padding: 0;
     margin: 0 4% 0 4%;
 }
-form.label{
+form label{
     display: inline-block;
     width: 40%;
     border: 1px solid;
@@ -102,10 +118,21 @@ form.label{
     padding: 0;
     margin: 0 4% 0 4%;
 }
-form.textarea{
+form textarea{
     display: inline-block;
     width: 40%;
     border: 1px solid;
     padding: 0;
     margin: 0 4% 0 4%;
 }
+
+@media screen and (max-width: 600px) {
+    div {
+      width: 100%
+    }
+    .gallery-pictures img{
+        widows: 100%;
+        margin-right:0;
+        margin-left: 0;
+    }
+  }
